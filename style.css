@@ -1,0 +1,218 @@
+:root {
+  --main-font: Roboto;
+  --font-size-small: 16px;
+  --font-size-medium: 21px;
+  --font-size-large: 32px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --line-height-small: 26.25px;
+  --line-height-medium: 37.5px;
+  --line-height-large: 78.75px;
+
+  --primary-color: #34547a;
+
+  --text-color: #000000;
+  --text-color-secondary: #727272;
+  --text-color-white: #ffffff;
+
+  --left-padding: 20%;
+  --right-padding: 20%;
+
+  --button-width: 225px;
+  --button-height: 65px;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #f9f9f9;
+}
+
+.grey-block {
+  background-color: #eeeff1;
+}
+
+.header-content {
+  padding-top: 80px;
+  padding-left: var(--left-padding);
+  padding-bottom: 140px;
+}
+
+.menu {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 160px;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  font-size: var(--font-size-small);
+  text-decoration: none;
+  line-height: var(--line-height-small);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color);
+}
+
+.hdescription {
+  margin-bottom: 60px;
+  max-width: 540px;
+}
+
+h1 {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight-medium);
+  font-size: 48px;
+  line-height: var(--line-height-large);
+  color: var(--text-color);
+}
+
+.fish {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+  color: var(--text-color-secondary);
+}
+
+button {
+  width: var(--button-width);
+  height: var(--button-height);
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.about-me {
+  padding: 106px 0;
+  text-align: center;
+}
+
+.adescription {
+  margin-bottom: 50px;
+  max-width: 540px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-medium);
+  color: var(--text-color);
+}
+
+.numbers {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.numbers-item {
+  display: flex;
+  align-items: center;
+  gap: 14%;
+  color: var(--text-color-white);
+}
+
+.h3-style {
+  font-family: var(--main-font);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
+  line-height: 24.61px;
+}
+
+.video {
+  margin-top: 60px;
+}
+
+footer {
+  padding: 50px 0 50px var(--left-padding);
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+}
+
+.h3-style-footer {
+  margin-bottom: 20px;
+  font-family: var(--main-font);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-medium);
+  line-height: 24.61px;
+}
+
+.footer-content {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight-regular);
+  font-size: 13px;
+  line-height: 21.33px;
+}
+
+/* Адаптация для планшетов (768px) */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-content {
+    padding-left: 10%;
+    padding-bottom: 80px;
+  }
+  .numbers {
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+  .numbers-item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .video iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Адаптация для телефонов (480px) */
+@media (max-width: 480px) {
+  .header-content {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .numbers {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .numbers-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  button {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+}
