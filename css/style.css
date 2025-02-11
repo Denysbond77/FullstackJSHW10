@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+body h1 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 78.75px;
+  color: #000000;
+}
+
+h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37.5px;
+  color: #000000;
+}
+
+.hdescription {
+  margin-bottom: 60px;
+  max-width: 540px;
+}
+
+.fish {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26.25px;
+  color: #727272;
+}
+
+.adescription {
+  margin-bottom: 50px;
+  max-width: 540px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #f9f9f9;
+}
+
+.grey-block {
+  background-color: #eeeff1;
+}
+
+.header-content {
+  padding-top: 80px;
+  padding-left: 20%;
+  padding-bottom: 140px;
+}
+
+.about-me {
+  padding: 106px 0;
+  text-align: center;
+}
+
+.numbers {
+  background-color: #34547a;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.video {
+  margin-top: 60px;
+}
+
+footer {
+  padding: 50px 0 50px 20%;
+  background-color: #34547a;
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 160px;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 26.25px;
+  font-weight: 400;
+  color: #000000;
+}
+
+button {
+  width: 225px;
+  height: 65px;
+  background-color: #34547a;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26.25px;
+}
+
+.numbers-item {
+  display: flex;
+  align-items: center;
+  gap: 14%;
+  color: #ffffff;
+}
+
+.h3-style {
+  font-family: Roboto;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24.61px;
+}
+
+.h3-style-footer {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24.61px;
+}
+
+.footer-content {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21.33px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-content {
+    padding-left: 10%;
+    padding-bottom: 80px;
+  }
+  .numbers {
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+  .numbers-item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .video iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .header-content {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .numbers {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .numbers-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  button {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+}

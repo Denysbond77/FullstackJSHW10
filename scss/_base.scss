@@ -1,0 +1,43 @@
+@use "variables" as *;
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+body h1 {
+  font-family: $main-font;
+  font-weight: $font-weight-medium;
+  font-size: 48px;
+  line-height: $line-height-large;
+  color: $text-color;
+}
+
+h2 {
+  font-family: $main-font;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-large;
+  line-height: $line-height-medium;
+  color: $text-color;
+}
+
+.hdescription {
+  margin-bottom: 60px;
+  max-width: 540px;
+}
+
+.fish {
+  font-family: $main-font;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+  color: $text-color-secondary;
+}
+
+.adescription {
+  margin-bottom: 50px;
+  max-width: 540px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,67 @@
+@use "variables" as *;
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@include tablet {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-content {
+    padding-left: 10%;
+    padding-bottom: 80px;
+  }
+  .numbers {
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+  .numbers-item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .video iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@include mobile {
+  .header-content {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .numbers {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .numbers-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  button {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+}

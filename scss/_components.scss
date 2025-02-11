@@ -1,0 +1,57 @@
+@use "variables" as *;
+
+.menu {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 160px;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  font-family: $main-font;
+  font-size: $font-size-small;
+  text-decoration: none;
+  line-height: $line-height-small;
+  font-weight: $font-weight-regular;
+  color: $text-color;
+}
+
+button {
+  width: $button-width;
+  height: $button-height;
+  background-color: $primary-color;
+  color: $text-color-white;
+  text-transform: uppercase;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+}
+
+.numbers-item {
+  display: flex;
+  align-items: center;
+  gap: 14%;
+  color: $text-color-white;
+}
+
+.h3-style {
+  font-family: $main-font;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-medium;
+  line-height: 24.61px;
+}
+
+.h3-style-footer {
+  margin-bottom: 20px;
+  font-family: $main-font;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-medium;
+  line-height: 24.61px;
+}
+
+.footer-content {
+  font-family: $main-font;
+  font-weight: $font-weight-regular;
+  font-size: 13px;
+  line-height: 21.33px;
+}
